@@ -1,0 +1,238 @@
+
+/* =====================================
+   GWC CLOUD PET CARD WORKSHOP
+   Prepared stylesheet
+
+   You do not need to edit this file!
+   Change the theme in index.html.
+   ===================================== */
+
+
+/* ===== COLOR THEMES ===== */
+
+.pink {
+    --card: #fbe3ef;
+    --accent: #f1c9df;
+    --text: #60334d;
+    --muted: #80566e;
+    --panel: #fff8fc;
+}
+
+.lavender {
+    --card: #e9e0fa;
+    --accent: #d8c7f4;
+    --text: #50376e;
+    --muted: #70598c;
+    --panel: #faf7ff;
+}
+
+.mint {
+    --card: #dff1e3;
+    --accent: #bfe3ca;
+    --text: #31583d;
+    --muted: #4c7056;
+    --panel: #f5fff7;
+}
+
+.blue {
+    --card: #dfeefa;
+    --accent: #bedbf3;
+    --text: #305675;
+    --muted: #4d6c87;
+    --panel: #f5faff;
+}
+
+.peach {
+    --card: #ffe6d8;
+    --accent: #ffd0b7;
+    --text: #79472f;
+    --muted: #875d47;
+    --panel: #fff9f4;
+}
+
+
+/* ===== PAGE LAYOUT ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #fdf2f8,
+        #ede9fe,
+        #e0f2fe
+    );
+}
+
+
+/* ===== PET CARD ===== */
+
+.pet-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 26px;
+
+    background: var(--card);
+    color: var(--text);
+
+    border: 3px solid white;
+    border-radius: 30px;
+
+    text-align: center;
+    overflow-wrap: anywhere;
+
+    box-shadow: 0 15px 40px rgba(60, 40, 80, 0.12);
+}
+
+
+/* ===== HEADER ===== */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: var(--muted);
+}
+
+
+/* ===== PET AVATAR ===== */
+
+.pet-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 24px auto 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 85px;
+
+    background: var(--accent);
+    border: 8px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+
+
+/* ===== PET NAME AND TYPE ===== */
+
+h1 {
+    margin: 8px 0;
+    font-size: 36px;
+    letter-spacing: -1px;
+}
+
+.pet-type {
+    display: inline-block;
+    margin: 0;
+    padding: 7px 16px;
+
+    background: var(--accent);
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ===== DESCRIPTION ===== */
+
+.description {
+    margin: 16px 0 22px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: var(--muted);
+}
+
+
+/* ===== INFORMATION PANEL ===== */
+
+.details {
+    padding: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background: var(--panel);
+    border-radius: 20px;
+
+    text-align: left;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.detail-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--card);
+    border-radius: 12px;
+
+    font-size: 20px;
+}
+
+.detail h2 {
+    margin: 0 0 4px;
+
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--muted);
+}
+
+.detail p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 22px;
+    font-size: 11px;
+    color: var(--muted);
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 400px) {
+    body {
+        padding: 14px;
+    }
+
+    .pet-card {
+        padding: 20px;
+    }
+}
